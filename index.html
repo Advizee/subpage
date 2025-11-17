@@ -492,9 +492,9 @@
     const kEl = document.getElementById('kCounter');
     let kVal = 1;
     function kRun() {
-      if (kVal <= 4) {
+      if (kVal <= 80) {
         kEl.textContent = kVal;
-        kVal++;
+        kVal+10;
         setTimeout(kRun, 700);
       }
     }
@@ -510,12 +510,12 @@
     const accEl = document.getElementById('accuracyCounter');
     let accVal = 10;
     function accRun() {
-      if (accVal < 95) {
+      if (accVal < 99) {
         accEl.textContent = accVal;
         accVal += 10;
         setTimeout(accRun, 220);
       } else {
-        accEl.textContent = 95;
+        accEl.textContent = 99;
       }
     }
     const accObs = new IntersectionObserver((entries,obs)=> {
@@ -530,7 +530,7 @@
     const upEl = document.getElementById('upliftCounter');
     let upVal = 1;
     function upRun() {
-      if (upVal <= 2) {
+      if (upVal <= 10) {
         upEl.textContent = upVal;
         upVal++;
         setTimeout(upRun, 700);
@@ -554,4 +554,5 @@
 
 </body>
 </html>
+
 
