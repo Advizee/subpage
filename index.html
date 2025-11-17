@@ -495,7 +495,7 @@
       if (kVal <= 80) {
         kEl.textContent = kVal;
         kVal+=10;
-        setTimeout(kRun, 700);
+        setTimeout(kRun, 220);
       }
     }
     const kObs = new IntersectionObserver((entries,kObserver)=> {
@@ -533,7 +533,7 @@
       if (upVal <= 10) {
         upEl.textContent = upVal;
         upVal++;
-        setTimeout(upRun, 700);
+        setTimeout(upRun, 220);
       }
     }
     const upObs = new IntersectionObserver((entries,obs)=> {
@@ -554,6 +554,7 @@
 
 </body>
 </html>
+
 
 
 
