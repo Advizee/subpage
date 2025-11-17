@@ -490,11 +490,11 @@
 
     // 4K counter: 1 -> 2 -> 3 -> 4 (shows as 1K+ ... 4K+)
     const kEl = document.getElementById('kCounter');
-    let kVal = 1;
+    let kVal = 10;
     function kRun() {
       if (kVal <= 80) {
         kEl.textContent = kVal;
-        kVal+10;
+        kVal+=10;
         setTimeout(kRun, 700);
       }
     }
@@ -554,5 +554,6 @@
 
 </body>
 </html>
+
 
 
