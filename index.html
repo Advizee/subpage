@@ -157,7 +157,7 @@
           <div class="flex items-center justify-between">
             <div>
               <p class="text-sm text-slate-400">Real-time Verified</p>
-              <h3 class="text-2xl font-semibold">Company Signals</h3>
+              <h3 class="text-2xl font-semibold">Business Outreach</h3>
             </div>
             <div class="text-right">
               <p class="text-sm text-slate-400">Accuracy</p>
@@ -317,7 +317,7 @@
   <section class="max-w-7xl mx-auto px-6 py-12">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="glass p-6 rounded-xl text-center card-hover" data-aos="zoom-in">
-        <p class="text-3xl font-bold big-stat"><span id="kCounter">1</span>K+</p>
+        <p class="text-3xl font-bold big-stat"><span id="kCounter">1</span>M+</p>
         <p class="text-sm text-slate-500 mt-1">Verified Contacts</p>
       </div>
 
@@ -341,9 +341,9 @@
 
       <div class="glass p-8 rounded-2xl hover:border-2 hover:border-blue-300 transition card-hover" data-aos="zoom-in">
         <h3 class="text-xl font-semibold">Starter</h3>
-        <p class="mt-4 text-3xl font-bold">$49<span class="text-sm font-medium">/mo</span></p>
+        <p class="mt-4 text-3xl font-bold">$0<span class="text-sm font-medium">/mo</span></p>
         <ul class="mt-6 space-y-2 text-sm text-slate-600">
-          <li>Up to 10k contacts</li>
+          <li>Up to 1M contacts</li>
           <li>Email & phone validation</li>
           <li>Basic director insights</li>
         </ul>
@@ -357,7 +357,7 @@
         </div>
         <p class="mt-4 text-3xl font-bold">$199<span class="text-sm font-medium">/mo</span></p>
         <ul class="mt-6 space-y-2 text-sm text-slate-600">
-          <li>Up to 100k contacts</li>
+          <li>Up to 50M contacts</li>
           <li>Priority support</li>
           <li>Advanced compliance signals</li>
         </ul>
@@ -495,7 +495,7 @@
       if (kVal <= 80) {
         kEl.textContent = kVal;
         kVal+=10;
-        setTimeout(kRun, 20);
+        setTimeout(kRun, 100);
       }
     }
     const kObs = new IntersectionObserver((entries,kObserver)=> {
@@ -513,7 +513,7 @@
       if (accVal < 99) {
         accEl.textContent = accVal;
         accVal += 10;
-        setTimeout(accRun, 220);
+        setTimeout(accRun, 100);
       } else {
         accEl.textContent = 99;
       }
@@ -533,7 +533,7 @@
       if (upVal <= 10) {
         upEl.textContent = upVal;
         upVal++;
-        setTimeout(upRun, 220);
+        setTimeout(upRun, 100);
       }
     }
     const upObs = new IntersectionObserver((entries,obs)=> {
@@ -554,6 +554,7 @@
 
 </body>
 </html>
+
 
 
 
